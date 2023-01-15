@@ -1,0 +1,99 @@
+.contents {
+    padding: 60px 30px 152px;
+
+    @media screen and (max-width: 800px) {
+        padding: 60px 100px 152px;
+    }
+
+    @media screen and (max-width: 490px) {
+        padding: 60px 50px 152px;
+    }
+
+    @media screen and (max-width: 380px) {
+        padding: 40px 30px 102px;
+    }
+
+    &__text {
+        text-align: center;
+        margin-bottom: 54px;
+    }
+
+    &__title {
+        font-size: 52px;
+        line-height: 62px;
+        font-weight: normal;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: center;
+        gap: 33px;
+
+        @media screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        flex: 0 1 476px;
+        height: 620px;
+        padding: 50px 30px 40px;
+        background: #FFFFFF;
+        border: 1px solid #D3D3D3;
+        box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        color: $color-black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @media screen and (max-width: 800px) {
+            flex: 0 1 573px;
+        }
+
+        @media screen and (max-width: 380px) {
+            padding: 30px 20px 30px;
+            flex: 0 1 500px;
+        }
+
+        &_title {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 30px;
+        }
+
+        &_text {
+            font-size: 16px;
+            line-height: 24px;
+            color: $color-second-text;
+        }
+
+        &_link {
+            font-weight: 500;
+            font-size: 17px;
+            color: $color-white;
+            padding: 16.5px 46px;
+            background: $color-primary;
+            box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+
+            &_cont {
+                flex: 1 0 auto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+
+        &_image img {
+            width: 100%;
+        }
+    }
+}

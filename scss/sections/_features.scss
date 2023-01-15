@@ -1,0 +1,120 @@
+.features {
+    padding: 162px 30px 122px;
+
+    @media screen and (max-width: 800px) {
+        padding: 162px 20px 122px;
+    }
+
+    @media screen and (max-width: 450px) {
+        padding: 102px 20px 122px;
+    }
+
+    &__center {
+        text-align: center;
+    }
+
+    &__center-title {
+        font-weight: normal;
+        font-size: 52px;
+        line-height: 62px;
+        text-transform: uppercase;
+        margin-bottom: 27px;
+
+        @media screen and (max-width: 450px) {
+            font-size: 42px;
+            line-height: 52px;
+        }
+    }
+
+    &__center-subtitle {
+        font-size: 20px;
+        line-height: 30px;
+        max-width: 590px;
+        margin: 0 auto 80px;
+
+        @media screen and (max-width: 450px) {
+            font-size: 22px;
+            max-width: 90%;
+        }
+
+        @media screen and (max-width: 350px) {
+            font-size: 18px;
+            max-width: 100%;
+        }
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        @media screen and (max-width: 760px) {
+            flex-direction: column;
+        }
+    }
+
+    &__img-container {
+        position: relative;
+
+        @media screen and (max-width: 760px) {
+            max-width: 60%;
+        }
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__img-small {
+        position: absolute;
+        bottom: -61px;
+        right: -28px;
+        width: 61.5%;
+
+        @media screen and (max-width: 760px) {
+            bottom: -31px;
+            right: 14%;
+        }
+    }
+
+    &__container-items {
+        max-width: 280px;
+        margin-top: 32px;
+    }
+
+    &__item {
+        margin-bottom: 71px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__title {
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        gap: 13px;
+        margin-left: -10px;
+
+        & img {
+            margin-top: 5px;
+        }
+    }
+
+    &__item-title {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.1px;
+        display: inline-block;
+        max-width: 160px;
+        margin-bottom: 20px;
+    }
+
+    &__item-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}

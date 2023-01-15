@@ -1,0 +1,55 @@
+.partners {
+    padding: 60px 30px 150px;
+
+    @media screen and (max-width:720px) {
+        padding: 60px 100px 150px;
+    }
+
+    @media screen and (max-width:525px) {
+        padding: 60px 50px 150px;
+    }
+
+    @media screen and (max-width:400px) {
+        padding: 60px 30px 150px;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__title {
+        font-weight: 400;
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 20px;
+    }
+
+    &__subtitle {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 60px;
+    }
+
+    &__images {}
+
+    &__row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 74px;
+        margin-bottom: 55px;
+
+        @media screen and (max-width:950px) {
+            gap: 50px;
+
+            & img:last-child {
+                max-width: 83px;
+            }
+        }
+    }
+
+    &__button {
+        text-align: center;
+    }
+}
